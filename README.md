@@ -5,6 +5,9 @@ Private docker-registry within docker
 1. `git clone https://github.com/hfreire/docker-registry.git`
 2. `cd docker-registry`
 
+## Create directory to store data
+`mkdir -p /var/lib/docker/registry`
+
 ## Create a user account
 `docker run --entrypoint htpasswd registry:2 -Bbn <username> <password> > htpasswd`
 
